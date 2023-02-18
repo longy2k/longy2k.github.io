@@ -1,0 +1,84 @@
+#profile-border {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 14em;
+  width: 27em;
+  margin: auto;
+}
+
+#profile-photo img{
+  margin: 0px 10px;
+  float: left;
+  width: 5.5em;
+  border: 1px solid black;
+}
+
+#profile-state {
+  margin: 4px 10px;
+  font-size: 20px;
+}
+
+#profile-desc h3, h5{
+  margin: 0px;
+  padding: 0px;
+}
+
+#profile-desc p{
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+  font-size: 13px;
+}
+
+#profile-desc img {
+  margin: 10px 10px 0px 10px;
+  width: 50px;
+}
+
+#comment {
+  color: #949494;
+  font-weight: bold;
+}
+
+#contact-border {
+  height: 14em;
+  width: 27em;
+  margin: auto;
+}
+#image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#image-container img {
+  width: 60px;
+}
+
+#image-container a {
+    text-decoration: none;
+    color: black;
+}
+
+#image-container figure {
+  margin: 0px;
+  text-align: center;
+}
+#image-container figcaption {
+  margin: 0px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}

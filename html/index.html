@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LONGY2K</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="profile-border">
+        <h2 id="profile-state">Massachusetts</h2>
+        <div id="profile-photo">
+          <img src="../images/myself.png">
+          <img src="../images/signiture.png" style="border:0px; clear:left;">
+        </div>
+        <div id="profile-desc">
+          <h3>Long Huynh</h3>
+          <h5>@LONGY2K</h5>
+          <h5>Currently pursuing a Bachelor's in Computer Science (2024) at Umass Boston</h5>
+          <p id="comment">IDK.</p>
+        </div>
+    </div>
+    <div id="contact-border">
+      <h3>Contacts</h3>
+      <div id="image-container">
+        <a href="#" onclick="emailContactBtn()">
+          <figure id="emailTag" title="longhuynh.y2k@gmail.com">
+          <img src="../images/mail-icon.png">
+          <figcaption>Email</figcapion>
+            <div id="copiedText1"></div>
+          </figure>
+        </a>
+        <a href="https://github.com/longy2k">
+          <figure>
+          <img src="../images/github-icon.webp">
+          <figcaption>GitHub</figcapion>
+          </figure>
+        </a>
+        <a href="https://www.linkedin.com/in/long-huynh-91a98322b/">
+          <figure>
+          <img src="../images/linkedin-icon.png">
+          <figcaption>Linkedin</figcapion>
+          </figure>
+        </a>
+        <a href="#" onclick="discordContactBtn()">
+          <figure id="discordUserTag" title="Longy2k#4603">
+          <img src="../images/discord-icon.png">
+          <figcaption>Discord</figcapion>
+            <div id="copiedText2"></div>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function emailContactBtn() {
+      var emailTextValue = document.getElementById("emailTag").getAttribute('title');
+      navigator.clipboard.writeText(emailTextValue);
+      copiedTextFn(1);
+    }
+    function discordContactBtn() {
+      var discordTextValue = document.getElementById("discordUserTag").getAttribute('title');
+      navigator.clipboard.writeText(discordTextValue);
+      copiedTextFn(2);
+    }
+    function copiedTextFn(value) {
+      document.getElementById("copiedText" + value).innerHTML = "Copied!";
+      document.getElementById("copiedText" + value).style.fontSize = "13px";
+      document.getElementById("copiedText" + value).style.fontWeight = "bold";
+      document.getElementById("copiedText" + value).style.padding = "3px";
+      document.getElementById("copiedText" + value).style.color = "white";
+      document.getElementById("copiedText" + value).style.backgroundColor = "#39c680";
+      document.getElementById("copiedText" + value).style.borderRadius = "20px";
+      setTimeout(function(){
+          document.getElementById("copiedText" + value).innerHTML = '';
+          document.getElementById("copiedText" + value).style.padding = "0px";
+      }, 1000);
+    }
+
+  </script>
+</html>
