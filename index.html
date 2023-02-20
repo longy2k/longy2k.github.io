@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="profile-border">
-        <h2 id="profile-state">Massachusetts <img src="images/planet-icon-4.webp" width="50px" style="float: right"></h2>
+        <h2 id="profile-state">Massachusetts <img src="images/clouds-icon.png" width="70px" style="float: right"></h2>
         <div id="profile-photo">
           <img src="images/myself.png">
           <img src="images/signiture.png" style="border:0px; clear:left;">
@@ -25,7 +25,7 @@
     <div id="contact-border">
       <h3>Contacts</h3>
       <div id="image-container">
-        <a href="#" onclick="emailContactBtn()">
+        <a href="javascript:void(0)" onclick="emailContactBtn()">
           <figure id="emailTag" title="longhuynh.y2k@gmail.com">
           <img src="images/mail-icon.png">
           <figcaption>Email</figcapion>
@@ -44,7 +44,7 @@
           <figcaption>Linkedin</figcapion>
           </figure>
         </a>
-        <a href="#" onclick="discordContactBtn()">
+        <a href="javascript:void(0)" onclick="discordContactBtn()">
           <figure id="discordUserTag" title="Longy2k#4603">
           <img src="images/discord-icon.png">
           <figcaption>Discord</figcapion>
@@ -67,7 +67,7 @@
     }
     function copiedTextFn(value) {
       document.getElementById("copiedText" + value).innerHTML = "Copied!";
-      document.getElementById("copiedText" + value).style.fontSize = "13px";
+      document.getElementById("copiedText" + value).style.fontSize = "10px";
       document.getElementById("copiedText" + value).style.fontWeight = "bold";
       document.getElementById("copiedText" + value).style.padding = "3px";
       document.getElementById("copiedText" + value).style.color = "white";
