@@ -244,6 +244,9 @@
     margin: 0px;
     padding: 0px;
   }
+  #profile-desc h5{
+    font-size: 13px;
+  }
 
   #profile-desc p{
     margin: 10px 0px 0px 0px;
