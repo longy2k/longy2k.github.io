@@ -3,7 +3,7 @@
     border: 2px solid black;
     border-radius: 10px;
     height: 13em;
-    width: 22em;
+    width: 21em;
     margin: auto;
   }
 
@@ -31,7 +31,7 @@
   #profile-desc p{
     margin: 10px 0px 0px 0px;
     padding: 0px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #profile-desc img {
@@ -46,7 +46,7 @@
 
   #contact-border {
     height: 14em;
-    width: 22em;
+    width: 21em;
     margin: auto;
   }
   #image-container {
