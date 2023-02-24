@@ -78,7 +78,7 @@
     border: 2px solid black;
     border-radius: 10px;
     height: 13em;
-    width: 27em;
+    width: 23em;
     margin: auto;
   }
 
@@ -121,7 +121,7 @@
 
   #contact-border {
     height: 14em;
-    width: 27em;
+    width: 23em;
     margin: auto;
   }
   #image-container {
@@ -146,9 +146,6 @@
     margin: 0px;
   }
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
